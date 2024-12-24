@@ -1,5 +1,11 @@
 [project]
 name = "dns"
+version = "0.1.0"
+description = "OctoDNS configuration for my DNS zones."
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "octodns>=1.10.0",
+    "octodns-bind>=0.0.6",
+    "octodns-ovh>=0.0.2",
+]
