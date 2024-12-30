@@ -1,0 +1,29 @@
+$TTL 3600
+$INCLUDE "zones/common"
+
+;
+; Mail
+;
+@						IN	MX		10 mail.protonmail.ch.
+@						IN	MX		20 mailsec.protonmail.ch.;
+@						IN	TXT		"v=spf1 include:_spf.protonmail.ch ~all"
+@						IN	TXT		"protonmail-verification=ca17fd87c3807e28a1c9f54901253a83796b88cb"
+_dmarc					IN	TXT		"v=DMARC1; p=quarantine"
+protonmail._domainkey	IN	CNAME	protonmail.domainkey.dujk44b5545shhtl4nrmjsq6eq5udwjzgiv4dcp775jir74kavjxq.domains.proton.ch.
+protonmail2._domainkey	IN	CNAME	protonmail2.domainkey.dujk44b5545shhtl4nrmjsq6eq5udwjzgiv4dcp775jir74kavjxq.domains.proton.ch.
+protonmail3._domainkey	IN	CNAME	protonmail3.domainkey.dujk44b5545shhtl4nrmjsq6eq5udwjzgiv4dcp775jir74kavjxq.domains.proton.ch.
+
+
+;
+; Vercel
+;
+@			IN	A		76.76.21.21
+_vercel		IN	TXT		"vc-domain-verify=evann.dev,b0f0452a2e33cf323ed5"
+
+
+;
+; Services
+;
+*			IN	CNAME	serge
+vault 	 	IN 	CNAME 	nasbdr
+n7folio		IN	CNAME	dreumonte.pages.inpt.fr.

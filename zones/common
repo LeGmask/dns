@@ -1,0 +1,21 @@
+@ IN SOA dns102.ovh.net. tech.ovh.net. (
+	2024121200	; Serial
+	86400		; Refresh
+	3600		; Retry
+	3600000		; Expire
+	60			; Minimum TTL
+)
+
+;
+; DNS Records
+;
+; Comme OVH ne supporte pas la modication des NS de la zone, on les commentes
+;@						IN	NS		dns102.ovh.net.
+;@						IN	NS		ns102.ovh.net.
+
+
+;
+; Servers
+;
+serge					IN	A		141.94.115.52
+nasbdr					IN	CNAME	nasbdr.synology.me.
