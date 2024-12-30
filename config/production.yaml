@@ -21,3 +21,9 @@ zones:
       - zonefile
     targets:
       - ovh
+
+  rosec.net.:
+    sources:
+      - zonefile
+    targets:
+      - ovh

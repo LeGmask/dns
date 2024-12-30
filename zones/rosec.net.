@@ -1,0 +1,7 @@
+$TTL 3600
+$INCLUDE "zones/common"
+
+;
+; Services
+;
+*			IN	CNAME	serge
